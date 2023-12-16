@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="249.0" spacing="20.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.druzhinina_120_3.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <Label fx:id="resultWindow" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onDragDetected="#proccesingForButtonResult" prefHeight="50.0" prefWidth="235.0" style="-fx-border-color: blue; -fx-background-color: white;" textFill="#1a1a1a">
+      <font>
+         <Font name="Bell MT" size="36.0" />
+      </font></Label>
+  <FlowPane accessibleRole="NODE" alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefHeight="241.0" prefWidth="217.0" prefWrapLength="100.0">
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="7">1</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="4">2</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="1">3</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="0">4</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="8">5</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="5">6</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="2">7</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text=".">8</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="9">9</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="6">10</Button>
+    <Button onAction="#yValue" prefHeight="50.0" prefWidth="50.0" text="3">11</Button>
+    <Button fx:id="reset" onAction="#resultNull" prefHeight="50.0" prefWidth="50.0" text="c">12</Button>
+    <Button alignment="CENTER" contentDisplay="CENTER" onAction="#resultPlus" prefHeight="50.0" prefWidth="50.0" text="+">13</Button>
+    <Button onAction="#resultMinus" prefHeight="50.0" prefWidth="50.0" text="-">14</Button>
+    <Button onAction="#resultMultiplication" prefHeight="50.0" prefWidth="50.0" text="*">15</Button>
+    <Button onAction="#resultDivision" prefHeight="50.0" prefWidth="50.0" text="/">16</Button>
+  </FlowPane>
+  <Button fx:id="result" onAction="#proccesingForButtonResult" prefHeight="34.0" prefWidth="199.0" text="=" />
+</VBox>
